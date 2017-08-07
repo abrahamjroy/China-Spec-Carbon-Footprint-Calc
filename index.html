@@ -138,6 +138,7 @@
 				<div id="results" class="text-center">
 					<h1 id="score"></h1>
 					<br/>
+					<div id="donutchart" class="center" style="width: 800px; height: 500px;"></div>
 					<p class="lead">这个数字代表你每年排放的二氧化碳的温室气体量</p>
 					<br/>
 					<h5 class="bg-success score-info">6,000 或以下是优秀的</h5>
@@ -173,6 +174,10 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="js/script.js" type="text/javascript"></script>
 </body>
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
 </script>
 <h3 id="announcement-subheader">您当前的位置</h3>
 <div id="dvMap" style="width: 300px; height: 200px;bottom:-1px;left:520px;">
